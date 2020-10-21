@@ -1,5 +1,44 @@
 @charset "utf-8";
 /* CSS Document */
+@media (min-width:576px) {
+  .container {
+    max-width: 570px
+  }
+}
+@media (min-width:768px) {
+  .container {
+    max-width: 760px
+  }
+}
+@media (min-width:992px) {
+  .container {
+    max-width: 970px
+  }
+}
+@media (min-width:1200px) {
+  .container {
+    max-width: 1160px
+  }
+}
+.navbar-nav li {
+  margin-right: .1rem;
+  margin-left: .5rem
+}
+@media (min-width:768px) {
+  /* 图片轮播适应宽度 电脑版 */
+  .carousel-inner img {
+    width: 100%;
+    /*height: 100%;*/
+  }
+}
+@media (max-width:768px) {
+  /* 图片轮播适应宽度 电脑版 */
+  .carousel-inner img {
+/*    width: 100%;*/
+    height: 100%;
+  }
+}
+/*所有的bootstrap容器*/
 .container {
   width: 100%;
   padding-right: 15px;
@@ -7,38 +46,14 @@
   margin-right: auto;
   margin-left: auto
 }
-@media (min-width:576px) {
-  .container {
-    max-width: 540px
-  }
-}
-@media (min-width:768px) {
-  .container {
-    max-width: 720px
-  }
-}
-@media (min-width:992px) {
-  .container {
-    max-width: 960px
-  }
-}
-@media (min-width:1200px) {
-  .container {
-    max-width: 1140px
-  }
-}
-.navbar-nav li {
-  margin-right: .1rem;
-  margin-left: .5rem
-}
-@media (min-width:992px) {
-  /* 图片轮播适应宽度 电脑版 */
-  .carousel-inner img {
-    width: 100%;
-    /*      height: 100%;*/
-  }
+/*全局背景色*/
+body {
+  background-color: #333333;
 }
 /* 轮播图片 */
+.carousel-inner img {
+  overflow: hidden;
+}
 .carousel {
   height: 500px;
   margin-bottom: 90px;
@@ -57,6 +72,87 @@
   color: #fff;
   text-align: center;
 }
-.carousel-inner{
-	margin-top: 55px;
+.carousel-inner {
+  margin-top: 55px;
 }
+.footer-bar {
+  background-color: #14191e;
+  font-size: 0.7rem;
+}
+.footer {
+  font-size: 0.9rem;
+  line-height: 1rem;
+  background-color: #1F252C;
+}
+/*row*/
+.window-square {
+  background-color: #000;
+  /*这个设置没啥意义*/
+}
+@media (max-width:768px) {
+  .window .row .window-square {
+    height: 260px !important;
+  }
+  .window .dmk {
+    margin: 0rem .125rem .125rem -.125rem;
+  }
+  .window .sjk {
+    margin: 0rem -.125rem .125rem .125rem;
+  }
+  .window .yh {
+    margin: 0rem .125rem .125rem -.125rem;
+  }
+  .window .dqh {
+    margin: 0rem -.125rem .125rem .125rem;
+  }
+  .window .nt {
+    margin: 0rem .125rem .125rem -.125rem;
+  }
+  .window .lwt {
+    margin: 0rem -.125rem .125rem .125rem;
+  }
+}
+@media (min-width:768px) {
+  .window .row .window-square {
+    height: 396px;
+  }
+  .window {
+    margin-top: 4rem;
+  }
+  .window .dmk {
+    margin: 0 .25rem .25rem -.5rem;
+  }
+  .window .sjk {
+    margin: 0 .25rem .25rem .25rem;
+  }
+  .window .yh {
+    margin: 0rem -.5rem .25rem .25rem;
+  }
+  .window .dqh {
+    margin: .25rem .25rem .25rem -.5rem;
+  }
+  .window .nt {
+    margin: .25rem .25rem .25rem .25rem;
+  }
+  .window .lwt {
+    margin: .25rem -.5rem .25rem .25rem;
+  }
+}
+.window {
+  margin-bottom: 4rem;
+}
+@media (max-width:768px) {
+  .window {
+    margin-top: 4rem !important;
+	margin-bottom: 4rem!important;
+  }
+}
+/*手机版去除头尾部部空白*/
+@media (max-width:576px) {
+  .window {
+    margin-top: 0 !important;
+	margin-bottom: 0!important;
+  }
+}
+
+a:hover{opacity:0.8;transition: all 0.9;}/*鼠标悬停变灰*/

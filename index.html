@@ -68,7 +68,7 @@ Email:2089839096@qq.com
 <main>
   <section> 
     <!-- 图片轮播插件 carousel-->
-    <div id="browser-pic" class="carousel slide" data-ride="carousel"> 
+    <div id="browser-pic" class="carousel slide mb-0" data-ride="carousel"> 
       <!-- 指示符 -->
       <ul class="carousel-indicators">
         <li data-target="#browser-pic" data-slide-to="0" class="active"></li>
@@ -80,19 +80,19 @@ Email:2089839096@qq.com
       <div class="carousel-inner">
         <div class="carousel-item active"> <img src="./images/dqh.jpg">
           <div class="carousel-caption">
-            <h1>东钱湖</h1>
+            <h1>景 • IN NingBo</h1>
             <p class="mt-4">东钱湖位于宁波市东侧,距市中心十五公里。素有“西子风韵、太湖气魄”之称</p>
           </div>
         </div>
         <div class="carousel-item"> <img src="./images/sjk-bg.jpg">
           <div class="carousel-caption">
-            <h1>三江口</h1>
+            <h1>城 • IN NingBo</h1>
             <p class="mt-4">三江口是宁波最早的“宁波港”港埠，就是从灵桥脚下到江北的下白沙一带</p>
           </div>
         </div>
         <div class="carousel-item"> <img src="./images/dmk.jpg">
           <div class="carousel-caption">
-            <h1>东门口</h1>
+            <h1>玩 • IN NingBo</h1>
             <p class="mt-4">东门口一直是宁波人心中的市中心</p>
           </div>
         </div>
@@ -101,45 +101,62 @@ Email:2089839096@qq.com
       <!-- 左右切换按钮 --> 
       <a class="carousel-control-prev" href="#browser-pic" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#browser-pic" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> </div>
   </section>
+  <section class="window">
+    <div class="container">
+      <div class="my-0 row text-light align-text-bottom"> 
+        <!--		  row里的居中比较复杂--> 
+        <a href="#" class="text-light window-square dmk col-md-5 col-5 d-flex align-items-center" style="background: url('images/dmk.jpg') center;"> 
+        <!--d-flex 弹性盒子布局 align-items-center 垂直居中--> 
+        <span class="text-center m-auto"> 
+        <!-- m-auto水平居中-->
+        <h4 ><strong>东门口</strong></h4>
+        <p>老宁波的印象</p>
+        </span> </a>
+        <div class="window-square sjk col-md-4 col-7 d-flex align-items-center" style="background: url('images/sjk.jpg') center;"> <span class="text-center m-auto"> 
+          <!-- m-auto水平居中-->
+          <h4><strong>三江口</strong></h4>
+          <p>夜景很美的地方</p>
+          </span> </div>
+        <div class="window-square yh col-md-3 col-7 d-flex align-items-center" style="background: url('images/nbez.jpg') center;"> <span class="text-center m-auto"> 
+          <!-- m-auto水平居中-->
+          <h4><strong>月湖</strong></h4>
+          <p>这里是我的高中，宁波二中</p>
+          </span> </div>
+        <div class="window-square dqh col-md-3 col-5 d-flex align-items-center" style="background: url('images/dqh.jpg') center;"> <span class="text-center m-auto"> 
+          <!-- m-auto水平居中-->
+          <h4><strong>东钱湖</strong></h4>
+          <p>周末休闲胜地</p>
+          </span> </div>
+        <div class="window-square nt col-md-3 col-5 d-flex align-items-center" style="background: url('images/ntlj.jpg') center;"> <span class="text-center m-auto"> 
+          <!-- m-auto水平居中-->
+          <h4><strong>南塘老街</strong></h4>
+          <p>城中的幽静之地</p>
+          </span> </div>
+        <div class="window-square lwt col-md-6 col-7 d-flex align-items-center" style="background: url('images/lwt.jpg') center;"> <span class="text-center m-auto"> 
+          <!-- m-auto水平居中-->
+          <h4><strong>老外滩</strong></h4>
+          <p>酒吧夜生活一条街</p>
+          </span> </div>
+      </div>
+    </div>
+  </section>
 </main>
-    <p>12345678</p>
-    <p>1234567</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
-    <p>123456</p>
+<footer class="footer mt-auto">
+  <section>
+    <div class="container pt-4 pb-3">
+      <div class="text-light">
+        <p>这是使用 BootStrap4 重置的响应式版本</p>
+        <p>城市图片来源：Unsplash & Google图片， 图片版权归原作者所有</p>
+      </div>
+    </div>
+    <div class="footer-bar text-light pt-3 pb-1">
+      <div class="container">
+        <p>Copyright 2019 <a href="https://huxiaofan.com/" target="_blank">胡晓帆-2018010587</a> , 网页课大作业.</p>
+      </div>
+    </div>
+  </section>
+</footer>
+
 <!-- jQuery and Bootstrap Bundle (includes Popper) --> 
 <script src="./bootstrap/js/jquery.slim.min.js"></script> 
 <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
