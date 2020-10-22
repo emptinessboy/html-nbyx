@@ -34,7 +34,7 @@
 @media (max-width:768px) {
   /* 图片轮播适应宽度 电脑版 */
   .carousel-inner img {
-/*    width: 100%;*/
+    /*    width: 100%;*/
     height: 100%;
   }
 }
@@ -144,15 +144,39 @@ body {
 @media (max-width:768px) {
   .window {
     margin-top: 4rem !important;
-	margin-bottom: 4rem!important;
+    margin-bottom: 4rem !important;
   }
 }
 /*手机版去除头尾部部空白*/
 @media (max-width:576px) {
   .window {
     margin-top: 0 !important;
-	margin-bottom: 0!important;
+    margin-bottom: 0 !important;
   }
 }
+.window a:hover {
+  /*鼠标悬停变灰*/
+/*  opacity: 1;*/
+	background-color: rgba(0, 0, 0, .5);
+	text-decoration: none;
+/*	去除超链接下划线*/
+}
+.window a{
+  transition: all 0.8s;
+} /*鼠标悬停特效延时*/
 
-a:hover{opacity:0.8;transition: all 0.9;}/*鼠标悬停变灰*/
+.window .mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    opacity: 1;
+    top: 0;
+    left: 0;
+}
+
+.window .mask .text-center{
+
+    opacity: 1;
+
+}
