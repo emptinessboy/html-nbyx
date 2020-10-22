@@ -48,7 +48,7 @@
 }
 /*全局背景色*/
 body {
-  background-color: #333333;
+  background-color: #272d33;
 }
 /* 轮播图片 */
 .carousel-inner img {
@@ -156,27 +156,70 @@ body {
 }
 .window a:hover {
   /*鼠标悬停变灰*/
-/*  opacity: 1;*/
-	background-color: rgba(0, 0, 0, .5);
-	text-decoration: none;
-/*	去除超链接下划线*/
+  /*opacity: 1;*/
+  background-color: rgba(0, 0, 0, .5);
+  text-decoration: none;
+  /*去除超链接下划线*/
 }
-.window a{
+.window a {
   transition: all 0.8s;
 } /*鼠标悬停特效延时*/
-
-.window .mask{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0);
-    position: absolute;
-    opacity: 1;
-    top: 0;
-    left: 0;
+.window .mask {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
 }
-
-.window .mask .text-center{
-
-    opacity: 1;
-
+.window .mask .text-center {
+  opacity: 1;
+}
+/*以下是正文排版部分css*/
+.page-bg {
+  height: 300px;
+  background: url("../images/dmk.webp") center;
+  background-size: 100% auto;
+}
+.main-passage p {
+  font-size: .95rem;
+  /*正文字体*/
+  margin: 1.5rem 0 1.5rem 0;
+  letter-spacing: .2rem;
+}
+.main-passage img {
+  max-width: 100%;
+  height: auto;
+}
+blockquote {
+  background-color: #2C2C2C;
+  padding: 0.2rem 0.5rem 0.2rem 1rem;
+  margin: 1.5rem 0 0.8rem -.2rem;
+  border-left: .5rem solid #454545;
+}
+/*小尺寸设备优化*/
+.passage h2 {
+  font-size: 1.5rem;
+}
+@media (max-width:768px) {
+  .passage .ml-5, .passage .mx-5 {
+    margin-left: 1rem !important;
+  }
+  .passage .mr-5, .passage .mx-5 {
+    margin-right: 1rem !important;
+  }
+  .passage .display-4 {
+    font-size: 2rem;
+  }
+  .passage h1 {
+    font-size: 2rem;
+  }
+  .passage h2 {
+    font-size: 1.2rem !important;
+  }
+  .main-passage p {
+    font-size: .75rem !important;
+    /*正文字体移动版*/
+  }
 }
