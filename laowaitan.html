@@ -6,44 +6,131 @@ Copyright 软件工程182胡晓帆-2018010587 All Rights Reserved!
 个人博客地址 https://huxiaofan.com/
 Email:2089839096@qq.com
 -->
-<html>
+<html lang="zh-cmn-Hans">
 <head>
+<!-- Required meta tags -->
 <meta charset="utf-8">
-<title>宁波印象</title>
-	<link href="style.css" type="text/css" rel="stylesheet">
-	<link rel="icon" href="https://huxiaofan.com/wp-content/uploads/2016/06/cropped-logo-192x192.jpg" sizes="192x192"/><!--从个人博客引用logo-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+<title>宁波印象2.0</title>
+<link href="./style/style.css" type="text/css" rel="stylesheet">
+<link rel="icon" href="https://huxiaofan.com/wp-content/uploads/2016/06/cropped-logo-192x192.jpg" sizes="192x192"/>
+<!--从个人博客引用logo-->
 </head>
-
 <body>
-	<div id="header">
-		<!--header参考穿搭速递-->
-    	<ul class="nav">
-			<li class="logo"><img src="images/logo.png" alt="logo"></li>
-        	<li><a href="index.html"><strong>首页Home</strong></a></li>
-        	<li><a href="dongmenkou.html">东门口</a></li>
-        	<li><a href="sanjiangkou.html">三江口</a></li>
-        	<li><a href="yuehu.html">月湖</a></li>
-        	<li><a href="dongqianhu.html">东钱湖</a></li>
-			<li><a href="nantang.html">南塘老街</a></li>
-			<li><a href="laowaitan.html">老外滩</a></li>
-        	<li><a href="login.html">登录/注册</a></li>
-    	</ul>
-	</div>
-	
-	<div class="banner-p5">
-        <p style="font-size: 50px; padding-top: 210px;"><strong>老外滩</strong></p>
+<header>
+  <section class="bg-dark">
+    <div class="container "> 
+      <!-- fixed-top 置顶，宽度100% -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"> 
+        <!-- fixed-top用于将导航条固定在顶部 --> 
+        <!-- 但固定顶部会遮挡页面顶部内容，需要给body设置padding-top来解决（导航条默认高度50） -->
+        <div class="container d-flex justify-content-between"> 
+          <!--justify-content-between可以让导航栏元素居中（类似电脑端两侧加padding的效果，之前我还以为要一个个分辨率媒体查询）--> 
+          <!-- 图片logo --> 
+          <a class="navbar-brand mr-4" href="./index.html"> <img src="./images/logo.png" alt="logo" style="width:40px;"> <strong>&nbsp;NingBo&nbsp;</strong> </a> 
+          <!-- 小于指定宽度折叠为图标 -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+          
+          <!-- 具体的导航项目 -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"> <a class="nav-link" href="./dongmenkou.html">东门口<span class="sr-only">(current)</span></a> </li>
+              <li class="nav-item"> <a class="nav-link" href="./sanjiangkou.html">三江口</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="./yuehu.html">月湖</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="./dongqianhu.html">东钱湖</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="./nantang.html">南塘</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="./laowaitan.html">外滩</a> </li>
+              <!-- 二级下拉的导航 -->
+              <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false"> 关于 </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="#">注册</a> <a class="dropdown-item" href="#">登录</a> 
+                  <!-- 分割线 -->
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">关于我</a> </div>
+              </li>
+            </ul>
+            <!-- 搜索框 -->
+            
+            <form class="form-inline my-2 my-lg-0" action="https://www.baidu.com/s" mothod="get">
+              <input class="form-control ml-1 mr-sm-2" type="search" placeholder="宁波" aria-label="宁波" value="宁波" name="wd">
+              <button class="btn btn-outline-success ml-1 my-2 my-sm-0" type="submit">搜索</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     </div>
-	
+  </section>
+</header>
+<main> 
+  <!--中间部分内容-->
+  <section> 
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="container">
+      <div class="passage jumbotron px-0 bg-dark text-light"> 
+        <!--暗色的阅读背景-->
+        <div class="container page-bg mx-0 px-0" style="background: url('./images/lwt.jpg') center;background-size: 100% auto;"> 
+          <!--背景图片容器page-bg类来设置背景，左右边距消除-->
+          <div class="h-100 w-100 mx-0 d-flex d-flex align-items-center" style="background: rgba(0,0,0,.4)"> 
+            <!--灰度遮罩容器-->
+            <div class="text-left text-light mx-5 px-1 pt-5">
+              <h1 class="mt-1 display-4 font-weight-bold font">&gt; 老外滩</h1>
+              <!--主标题-->
+              <p class="dropdown-divider"></p>
+              <!--分割线-->
+              <h2>这里有酒，你有故事么？</h2>
+              <!--副标题--> 
+            </div>
+          </div>
+        </div>
+        <section> </section>
+        <div class="main-passage mx-5 mt-5 mb-3"> 
+          <!--存放正文内容的div-->
+          <blockquote>
+            <p>酒吧一条街、年轻人聚集地、欧陆风情建筑长廊......提起宁波老外滩，大多数人想到的，就是这些词汇。</p>
+          </blockquote>
+          <p>作为开埠比上海外滩早了20年的外滩，这里曾有过最繁华的街道：宁波第一家洋行热热闹闹地在此处开业；巡捕房改成的警察局里穿制服的警察们威武帅气；最早的邮局每天清晨都有大批的邮件飞往世界各地；老码头的船鸣着汽笛在甬江上载着外出的宁波人走向外面的世界。</p>
+          <img src="images/wt.webp"  alt="外滩">
+          <p>宁波老外滩自唐宋以来就是最繁华的港口之一，清初中国和日本尚有贸易往来，在清代实行全面闭关之时，宁波是唯一保留了对外贸易的特殊港口。这种特殊的港口地位从1644年到1684年左右，时间长达约40年。</p>
+          <p>1842年鸦片战争后，清政府签订了《南京条约》， 宁波作为五口通商口岸之一，各国商人蜂拥至宁。1844年正式开埠。不久，江北岸便发展成为英、法、美三国侨民居留区域。是中国最早的“租界”之一。</p>
+          <img src="images/wt2.webp"  alt="外滩">
+          <p>这个位于三江口江北岸的城市地标，见证了三江水的潮起潮落，也见证了宁波这座城的沧桑变迁。</p>
+          <img src="images/wt3.webp"  alt="外滩">
+          <p>2005年1月1日，经过百年落寞，投资6亿元的宁波老外滩重新开埠，随后参照上海新天地引进的业态，几乎囊括了个性消费的所有功能，如城建展馆、星级酒店、国际影院、世界美食、城市公寓、行业会馆、生活天地等，形成了崭新的独具风韵的生活服务区，如今已经成为时下年轻人常去的休闲场所。</p>
+          <img src="images/wt4.webp"  alt="外滩">
+          <p>如今，宁波市以甬江北岸地块为中心，拟建设宁波文创港，规划面积约6平方公里，而位列其中的宁波老外滩，也将在新一轮建设中再次升级。</p>
+          <img src="images/wt5.webp"  alt="外滩">
+          <p>时代在前进，城市总有新变化。在期待老外滩换新颜的同时，我们也应该用手中的相机为它留下此刻，记录下这里的一砖一瓦、一人一事、一草一木，为梳理城市脉络留下宝贵的影像记忆。</p>
+          <img src="images/wt6.webp"  alt="外滩">
+          <p><em><a href="https://mp.weixin.qq.com/s/PLodCMXkNicF2dsBhvwGCg" target="_blank">本文转自微信公众号(点击查看原文)</a></em> </p>
+          
+          <!--存放正文内容的div结束--> 
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer mt-auto">
+  <section>
+    <div class="container pt-4 pb-3">
+      <div class="text-light" style="margin-top: 0.8rem;">
+        <p>这是使用 BootStrap4 重置的响应式版本</p>
+        <p>城市图片来源：Unsplash & Google图片， 图片版权归原作者所有</p>
+      </div>
+    </div>
+    <div class="footer-bar text-light pt-3 pb-1">
+      <div class="container">
+        <p>Copyright &copy;2019 / 2020重置 <a href="https://huxiaofan.com/" target="_blank">胡晓帆-2018010587</a> , 网页课大作业.</p>
+      </div>
+    </div>
+  </section>
+</footer>
 
-	<div class="content">
-        <p style="font-size: 20px; padding-top: 7px; text-align: center;"><strong>这里有酒，你有故事么？</strong></p>
-		<p>酒吧一条街、年轻人聚集地、欧陆风情建筑长廊......提起宁波老外滩，大多数人想到的，就是这些词汇。<br/><br/>作为开埠比上海外滩早了20年的外滩，这里曾有过最繁华的街道：宁波第一家洋行热热闹闹地在此处开业；巡捕房改成的警察局里穿制服的警察们威武帅气；最早的邮局每天清晨都有大批的邮件飞往世界各地；老码头的船鸣着汽笛在甬江上载着外出的宁波人走向外面的世界。<br/><br/><img src="images/wt.webp" style="height: 350px;" alt="外滩"><br/><br/>宁波老外滩自唐宋以来就是最繁华的港口之一，清初中国和日本尚有贸易往来，在清代实行全面闭关之时，宁波是唯一保留了对外贸易的特殊港口。这种特殊的港口地位从1644年到1684年左右，时间长达约40年。<br/><br/><img src="images/wt1.webp" style="height: 350px;" alt="外滩"><br/><br/>1842年鸦片战争后，清政府签订了《南京条约》， 宁波作为五口通商口岸之一，各国商人蜂拥至宁。1844年正式开埠。不久，江北岸便发展成为英、法、美三国侨民居留区域。是中国最早的“租界”之一。<br/><br/><img src="images/wt2.webp" style="height: 350px;" alt="外滩"><br/><br/>这个位于三江口江北岸的城市地标，见证了三江水的潮起潮落，也见证了宁波这座城的沧桑变迁。<br/><br/><img src="images/wt3.webp" style="height: 350px;" alt="外滩"><br/><br/>2005年1月1日，经过百年落寞，投资6亿元的宁波老外滩重新开埠，随后参照上海新天地引进的业态，几乎囊括了个性消费的所有功能，如城建展馆、星级酒店、国际影院、世界美食、城市公寓、行业会馆、生活天地等，形成了崭新的独具风韵的生活服务区，如今已经成为时下年轻人常去的休闲场所。<br/><br/><img src="images/wt4.webp" style="height: 350px;" alt="外滩"><br/><br/>如今，宁波市以甬江北岸地块为中心，拟建设宁波文创港，规划面积约6平方公里，而位列其中的宁波老外滩，也将在新一轮建设中再次升级。<br/><br/><img src="images/wt5.webp" style="height: 350px;" alt="外滩"><br/><br/>时代在前进，城市总有新变化。在期待老外滩换新颜的同时，我们也应该用手中的相机为它留下此刻，记录下这里的一砖一瓦、一人一事、一草一木，为梳理城市脉络留下宝贵的影像记忆。<br/><br/><img src="images/wt6.webp" style="height: 350px;" alt="外滩"><br/><br/><em><a href="https://mp.weixin.qq.com/s/PLodCMXkNicF2dsBhvwGCg" target="_blank">本文转自微信公众号(点击查看原文)</a></em>
-		</p> 	
-    </div>
-	
-	<div id="footer">
-		<p>Copyright 2019 <a href="https://huxiaofan.com/" target="_blank">胡晓帆-2018010587</a> , 网页课大作业.</p>
-    	<p>城市图片来源：Unsplash & Google图片， 图片版权归原作者所有</p>
-	</div>
+<!-- jQuery and Bootstrap Bundle (includes Popper) --> 
+<script src="./bootstrap/js/jquery.slim.min.js"></script> 
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

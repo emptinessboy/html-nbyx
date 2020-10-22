@@ -179,7 +179,6 @@ body {
 /*以下是正文排版部分css*/
 .page-bg {
   height: 300px;
-  background: url("../images/dmk.webp") center;
   background-size: 100% auto;
 }
 .main-passage p {
@@ -191,6 +190,8 @@ body {
 .main-passage img {
   max-width: 100%;
   height: auto;
+  /*高度超过500px的图片会被强制缩小*/
+  max-height: 500px;
 }
 blockquote {
   background-color: #2C2C2C;
