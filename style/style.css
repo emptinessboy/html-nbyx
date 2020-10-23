@@ -161,6 +161,10 @@ body {
   text-decoration: none;
   /*去除超链接下划线*/
 }
+.window-square {
+  /*响应式变换动画*/
+  transition: all 0.8s;
+}
 .window a {
   transition: all 0.8s;
 } /*鼠标悬停特效延时*/
