@@ -256,7 +256,13 @@ blockquote {
 /*这是因为bootstrap的row会自动添加左右-15px的margin*/
 .row {
   margin-right: 0px !important;
-/*  margin-left: 0px !important;*/
+  /*  margin-left: 0px !important;*/
+}
+@media (max-width:768px) {
+  .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+  }
 }
 .mt-login {
   /*登录界面的导航条不再默认保留下间距*/
