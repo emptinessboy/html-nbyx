@@ -249,13 +249,14 @@ blockquote {
   .login .login-form {
     /*电脑版消除左侧轮播导致的向右偏移*/
     /*    width: 100%;*/
-    margin-left: -15px;
+    margin-left: -7.5px;
   }
 }
 /*去除登录页面左右宽度异常问题*/
+/*这是因为bootstrap的row会自动添加左右-15px的margin*/
 .row {
   margin-right: 0px !important;
-  margin-left: 0px !important;
+/*  margin-left: 0px !important;*/
 }
 .mt-login {
   /*登录界面的导航条不再默认保留下间距*/
