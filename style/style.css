@@ -254,12 +254,12 @@ blockquote {
 }
 /*去除登录页面左右宽度异常问题*/
 /*这是因为bootstrap的row会自动添加左右-15px的margin*/
-login-reg .row {
+.login-reg .row {
   margin-right: 0px !important;
   /*  margin-left: 0px !important;*/
 }
 @media (max-width:768px) {
-  login-reg .row {
+  .login-reg .row {
     margin-right: 0px !important;
     margin-left: 0px !important;
   }
