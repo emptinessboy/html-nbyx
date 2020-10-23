@@ -252,16 +252,10 @@ blockquote {
     margin-left: -15px;
   }
 }
-@media (max-width:768px) {
-  /*去除手机版登录页面左右宽度异常问题*/
-  .row {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-  }
-  .form-signin {
-    margin-top: 0;
-    padding-top: 0;
-  }
+/*去除登录页面左右宽度异常问题*/
+.row {
+  margin-right: 0px !important;
+  margin-left: 0px !important;
 }
 .mt-login {
   /*登录界面的导航条不再默认保留下间距*/
