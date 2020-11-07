@@ -18,10 +18,11 @@
 }
 
 body {
-  margin-top: 50px;
-  padding: 30px;
+  margin-top: 4rem;
+  /*全局背景色*/
+  background-color: #272d33;
+  //留出顶部导航栏空间
 }
-
 /* CSS Document */
 @media (min-width:576px) {
   .container {

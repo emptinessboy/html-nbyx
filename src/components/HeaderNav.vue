@@ -16,15 +16,25 @@
           <b-collapse id="nav-collapse" is-nav>
             <!-- 具体的导航项目 -->
             <b-navbar-nav>
-              <b-nav-item href="#" active>东门口</b-nav-item>
-              <b-nav-item href="#">三江口</b-nav-item>
-              <b-nav-item href="#">月湖</b-nav-item>
-              <b-nav-item href="#">东钱湖</b-nav-item>
-              <b-nav-item href="#">南塘</b-nav-item>
-              <b-nav-item href="#">外滩</b-nav-item>
+              <!--数据来自/static/page-nav.json-->
+              <b-nav-item v-for="(page,index) in pages"
+                          :key="index"
+                          :to="page.to"
+                          :active="isActive(page.to)">
+                {{ page.name }}
+              </b-nav-item>
+              <!--下面这种写法会报错 ESLint: The "pages' variable inside 'v-for' directive should be replaced with a computed property that returns filtered array instead. You should not mix 'v-for' with 'v-if'. (vue/no-use-v-if-with-v-for)-->
+              <!--<b-nav-item  v-for="(page,index) in pages" :key="index" :to="page.to"-->
+              <!--             v-if="$route.path == page.to" active>{{index}}{{ page.name }}</b-nav-item>-->
+              <!--&lt;!&ndash;遍历从服务器收到的json中的名称和url&ndash;&gt;-->
+              <!--<b-nav-item  :to="page.to" v-else>{{index}}{{ page.name }}</b-nav-item>-->
+              <!--&lt;!&ndash;vif用于控制是否高亮显示&ndash;&gt;-->
               <b-nav-item-dropdown text="关于" right>
                 <b-dropdown-item href="#">注册</b-dropdown-item>
                 <b-dropdown-item href="#">登录</b-dropdown-item>
+                <!-- 分割线 -->
+                <div class="dropdown-divider"></div>
+                <b-dropdown-item href="https://huxiaofan.com/about/">关于我</b-dropdown-item>
               </b-nav-item-dropdown>
             </b-navbar-nav>
 
@@ -44,17 +54,54 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-  name: "HeaderNav"
+  name: "HeaderNav",
+  data() {
+    return {
+      pages: {}
+    }
+  },
+  created() {
+    let that = this
+    // 在Vue中this始终指向Vue，但axios中this为undefined
+    // 通过 let that = this
+    // 将this保存在that中，再在函数中使用that均可
+    axios.get('/static/page-nav.json').then(response => {
+      this.pages = response.data
+    }).finally(function () {
+      let page;
+      for (page in that.pages) {
+        console.log(that.pages[page].name + " ==> " + that.pages[page].to)
+      }
+    })
+  },
+  mounted() {
+  },
+  computed: {},
+  methods: {
+    isActive(pagepath) {
+      console.log(pagepath)
+      console.log("routepath ==> " + this.$route.path)
+      if (this.$route.path == pagepath) {
+        return true
+      } else {
+        return false
+      }
+    }
+    // 判断当前nav是否已经激活
+  }
 }
 </script>
 
 <style scoped>
-.navbar-nav{
+.navbar-nav {
   letter-spacing: .05rem;
 }
+
 .navbar-nav li {
   margin-right: .1rem;
-  margin-left: .3rem
+  margin-left: .4rem
 }
 </style>
