@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-# learn-01
+目前正在使用VUE重新构建
 
-## Project setup
+### Project setup
 ```
 npm install
 ```
@@ -16,13 +15,6 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 =======
 # Html宁波印象
 
