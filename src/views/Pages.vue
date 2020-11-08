@@ -4,7 +4,6 @@
     <!--使用key绑定防止子组件复用，防止路由刷新文章不刷新的bug-->
     <!--数据双向绑定，传递文章内容参数-->
     <footer-bar></footer-bar>
-    <h1>{{ path }}</h1>
   </div>
 </template>
 
