@@ -23,14 +23,14 @@ export default {
   data() {
     return {
       carousel: {}
-    }
+    };
   },
   created() {
     let that = this;
     axios.get("/static/index.json").then(response => {
-      that.carousel = response.data.carousel
-      console.log(that.carousel)
-    })
+      that.carousel = response.data.carousel;
+      console.log(that.carousel);
+    });
   }
 };
 </script>
