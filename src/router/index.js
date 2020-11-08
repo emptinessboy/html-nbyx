@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import PageDmk from "@/views/PageDmk";
+import Pages from "@/views/Pages";
 
 Vue.use(VueRouter);
 
@@ -10,6 +11,11 @@ const routes = [
     path: "/",
     name: "Home",
     component: Home
+  },
+  {
+    path: "/pages/:name",
+    name: "PAGES",
+    component: Pages
   },
   {
     path: "/dmk",

@@ -69,7 +69,7 @@ export default {
     // 通过 let that = this
     // 将this保存在that中，再在函数中使用that均可
     axios.get('/static/page-nav.json').then(response => {
-      this.pages = response.data
+      that.pages = response.data
     }).finally(function () {
       let page;
       for (page in that.pages) {
@@ -82,8 +82,8 @@ export default {
   computed: {},
   methods: {
     isActive(pagepath) {
-      console.log(pagepath)
-      console.log("routepath ==> " + this.$route.path)
+      // console.log(pagepath)
+      // console.log("routepath ==> " + this.$route.path)
       if (this.$route.path == pagepath) {
         return true
       } else {

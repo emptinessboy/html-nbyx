@@ -1,27 +1,27 @@
 [
   {
     "name": "东门口",
-    "to": "/dmk"
+    "to": "/pages/dmk"
   },
   {
     "name": "三江口",
-    "to": "/sjk"
+    "to": "/pages/sjk"
   },
   {
   "name": "月湖",
-  "to": "/yh"
+  "to": "/pages/yh"
   },
   {
     "name": "东钱湖",
-    "to": "/dqh"
+    "to": "/pages/dqh"
   },
   {
     "name": "南塘",
-    "to": "/nt"
+    "to": "/pages/nt"
   },
   {
     "name": "外滩",
-    "to": "/wt"
+    "to": "/pages/wt"
   }
 
 ]
