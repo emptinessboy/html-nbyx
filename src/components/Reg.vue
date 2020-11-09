@@ -77,6 +77,9 @@ export default {
       }
     }
   },
+  created() {
+    document.title = '注册 | 宁波印象BOOT-VUE3.0'
+  },
   methods: {
     onSubmit(evt) {
       evt.preventDefault()

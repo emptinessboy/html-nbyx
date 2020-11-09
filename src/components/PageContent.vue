@@ -39,7 +39,8 @@ export default {
     return {
       data: {},
       imgstyle: "",
-      content: {}
+      content: {},
+      title : "",
     };
   },
   created() {
@@ -57,6 +58,8 @@ export default {
           //
         }
       }
+      //动态标题
+      document.title = that.data.title+' | 宁波印象BOOT-VUE3.0'
     });
   }
 };

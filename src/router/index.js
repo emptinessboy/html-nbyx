@@ -10,17 +10,26 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
+    meta:{
+      title : "首页 | 宁波印象BOOT-VUE3.0"
+    }
   },
   {
     path: "/pages/:name",
     name: "PAGES",
-    component: Pages
+    component: Pages,
+    meta:{
+      title : "文章加载中…… | 宁波印象BOOT-VUE3.0"
+    }
   },
   {
     path: "/user/:status",
     name: "USER",
-    component: User
+    component: User,
+    meta:{
+      title : "用户 | 宁波印象BOOT-VUE3.0"
+    }
   },
   // {
   //   path: "/about",
