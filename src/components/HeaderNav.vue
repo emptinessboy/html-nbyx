@@ -30,8 +30,8 @@
               <!--<b-nav-item  :to="page.to" v-else>{{index}}{{ page.name }}</b-nav-item>-->
               <!--&lt;!&ndash;vif用于控制是否高亮显示&ndash;&gt;-->
               <b-nav-item-dropdown text="关于" right>
-                <b-dropdown-item href="#">注册</b-dropdown-item>
-                <b-dropdown-item href="#">登录</b-dropdown-item>
+                <b-dropdown-item :to="{path:'/user/login'}">登录</b-dropdown-item>
+                <b-dropdown-item :to="{path:'/user/reg'}">注册</b-dropdown-item>
                 <!-- 分割线 -->
                 <div class="dropdown-divider"></div>
                 <b-dropdown-item href="https://huxiaofan.com/about/">关于我</b-dropdown-item>

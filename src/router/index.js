@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Pages from "@/views/Pages";
+import User from "@/views/User";
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: "/pages/:name",
     name: "PAGES",
     component: Pages
+  },
+  {
+    path: "/user/:status",
+    name: "USER",
+    component: User
   },
   // {
   //   path: "/about",

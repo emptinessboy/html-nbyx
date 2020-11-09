@@ -1,0 +1,20 @@
+{
+  "carousel": [
+    {
+      "name": "景 • IN NingBo",
+      "desc": "东钱湖位于宁波市东侧,距市中心十五公里。素有“西子风韵、太湖气魄”之称",
+      "img": "/images/dqh.jpg"
+    },
+    {
+      "name": "城 • IN NingBo",
+      "desc": "三江口是宁波最早的“宁波港”港埠，就是从灵桥脚下到江北的下白沙一带",
+      "img": "/images/sjk-bg.jpg"
+    },
+    {
+      "name": "玩 • IN NingBo",
+      "desc": "东门口一直是宁波人心中的市中心",
+      "img": "/images/dmk.jpg"
+    }
+  ]
+}
+
