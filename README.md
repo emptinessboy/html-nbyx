@@ -1,16 +1,11 @@
-目前正在使用VUE重新构建
+使用 VUE.js 2.6 重新构建完成
 
-### Project setup
+### 源代码初始化
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
+### 打包发布
 ```
 npm run build
 ```
@@ -18,11 +13,13 @@ npm run build
 =======
 # Html宁波印象
 
-> **预览地址：[预览地址](https://huxiaofan.com/doc/nbyx/)**
+> **预览地址 VUE.js 版本：[预览地址](https://huxiaofan.com/doc/nbyxvue/#/)**
+>
+> **预览地址 BootStrap 版本：[预览地址](https://huxiaofan.com/doc/nbyx/)**
 
 ## 2020 重制版
 
-最近在看前端的内容，顺手把自己以前做的网页拿来修改了。使用 HTML5_CSS3+BootStrap4 重新绘制了当初做的内容，实现了响应式的同时基本保留原来的风格。下面是效果图（动图）
+最近在看前端的内容，顺手把自己以前做的网页拿来修改了。使用 HTML5_CSS3+BootStrap4+VUE 重新绘制了当初做的内容，实现了响应式的同时基本保留原来的风格。下面是效果图（动图）
 
 [![nbyx-bootstrap.gif](https://media.everdo.cn/tank/pic-bed/2020/10/23/nbyx-bootstrap.gif)](https://up.media.everdo.cn/image/jicX)
 
