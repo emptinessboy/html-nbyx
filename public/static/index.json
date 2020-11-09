@@ -18,6 +18,40 @@
   ],
   "imgwindow": [
     {
+      "name": "东门口",
+      "desc": "老宁波的印象",
+      "img": "/images/dmk.jpg",
+      "to": "/pages/dmk"
+    },
+    {
+      "name": "三江口",
+      "desc": "夜景很美的地方",
+      "img": "/images/sjk.jpg",
+      "to": "/pages/sjk"
+    },
+    {
+      "name": "月湖",
+      "desc": "这里是我的高中，宁波二中",
+      "img": "/images/nbez.jpg",
+      "to": "/pages/yh"
+    },
+    {
+      "name": "东钱湖",
+      "desc": "周末休闲胜地",
+      "img": "/images/dqh.jpg",
+      "to": "/pages/dqh"
+    },
+    {
+      "name": "南塘老街",
+      "desc": "城中的幽静之地",
+      "img": "/images/ntlj.jpg",
+      "to": "/pages/nt"
+    },
+    {
+      "name": "老外滩",
+      "desc": "酒吧夜生活一条街",
+      "img": "/images/lwt.jpg",
+      "to": "/pages/wt"
     }
   ]
 }

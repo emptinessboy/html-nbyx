@@ -26,22 +26,22 @@ body {
 /* CSS Document */
 @media (min-width:576px) {
   .container {
-    max-width: 570px
+    max-width: 570px;
   }
 }
 @media (min-width:768px) {
   .container {
-    max-width: 760px
+    max-width: 760px;
   }
 }
 @media (min-width:992px) {
   .container {
-    max-width: 970px
+    max-width: 970px;
   }
 }
 @media (min-width:1200px) {
   .container {
-    max-width: 1160px
+    max-width: 1160px;
   }
 }
 

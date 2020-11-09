@@ -4,7 +4,7 @@
     <b-carousel
         id="carousel-1"
         v-model="slide"
-        :interval="400000"
+        :interval="4000"
         controls
         indicators
         background="#ababab"
@@ -50,6 +50,7 @@ export default {
     }
   },
   created() {
+    console.log("图片轮播created")
   },
   methods: {
     onSlideStart(slide) {

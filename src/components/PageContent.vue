@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import axios from "axios"
+import axios from "axios";
 
 export default {
   name: "PageContent",
@@ -40,26 +40,26 @@ export default {
       data: {},
       imgstyle: "",
       content: {}
-    }
+    };
   },
   created() {
-    let that = this
+    let that = this;
     axios.get("/static/page-content.json").then(response => {
-      that.data = response.data
+      that.data = response.data;
       let index;
       for (index in that.data) {
         if (that.data[index].to == that.path) {
-          console.log("成功加载正文")
-          that.data = that.data[index]
+          console.log("成功加载正文");
+          that.data = that.data[index];
           that.imgstyle = "background: url('" + that.data.img + "') center;background-size: 100% auto;"
           break;
         } else {
           //
         }
       }
-    })
-  },
-}
+    });
+  }
+};
 </script>
 
 <style>

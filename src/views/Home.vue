@@ -1,17 +1,18 @@
 <template>
   <div>
-    <header-carousel :carousel="carousel"></header-carousel>
-    <home-pic></home-pic>
+    <!--此处加v-if的目的是为了防止axiox异步加载没取完数据就把dom给渲染了-->
+    <header-carousel :carousel="carousel" v-if="carousel.length != null"></header-carousel>
+    <home-pic :imgwindow="imgwindow" v-if="imgwindow.length != null"></home-pic>
     <footer-bar></footer-bar>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import axios from "axios";
 import HeaderCarousel from "@/components/HeaderCarousel";
 import HomePic from "@/components/HomePic";
 import FooterBar from "@/components/FooterBar";
-import axios from "axios";
 
 export default {
   name: "Home",
@@ -22,14 +23,17 @@ export default {
   },
   data() {
     return {
-      carousel: {}
+      carousel: {},
+      imgwindow: {}
     };
   },
   created() {
     let that = this;
     axios.get("/static/index.json").then(response => {
       that.carousel = response.data.carousel;
-      console.log(that.carousel);
+      that.imgwindow = response.data.imgwindow;
+      // console.log(that.carousel)
+      // console.log(that.imgwindow)
     });
   }
 };
